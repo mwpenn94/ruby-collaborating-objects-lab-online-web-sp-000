@@ -38,6 +38,6 @@ class Artist
   end
 
   def self.find_or_create_by_name(artist_name)
-    self.find(artist_name) ? self.find(artist_name) : self.create(artist_name)
+    self.find(artist_name) ? self.find(artist_name) : self.new(artist_name)
   end
 end
