@@ -21,7 +21,7 @@ class Song
     artist_info = filename.gsub(/".mp3"/, "").split(" - ")
 
     new_song = self.new(artist_info[1])
-    new_song.artist_name(artist_info[0])
+    new_song.artist_name=(artist_info[0])
 
     new_song
   end
